@@ -1,8 +1,3 @@
-### File
-
-* [`fridge`](Unsolved/fridge.html)
-
-### Instructions
 
 * Working in groups of 3, complete the code for the fridge activity such that:
 
@@ -12,4 +7,6 @@
 
   3. Hitting the clear button erases all of the letters from the fridge.
 
-* **NOTE:** This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+* This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+
+  https://hachir.github.io/my-Games/
