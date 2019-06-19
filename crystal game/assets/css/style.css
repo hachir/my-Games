@@ -1,3 +1,8 @@
+body{
+  background-image: url(22.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #root {
   text-align: center;
   padding-top: 150px;
@@ -23,13 +28,14 @@
 }
 
 .red {
-  background: #e53935;
+  background: #ffe752e8;
 }
 
 .blue {
-  background: #1e88e5;
+  background:darksalmon;
 }
 
 .green {
-  background: #43a047;
+  background: #40d8dd;
 }
+
