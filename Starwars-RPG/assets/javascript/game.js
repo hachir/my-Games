@@ -270,7 +270,18 @@ var screenHandler = {
 };
 
 function reset() {
-
+    // Remove characters, events, buttons, and reset game object
+    console.log("*** Resetting Game ***");
+    $(window).off("keydown");
+    $(".character").remove();
+    $("#attack-btn").hide();
+    $("#reset-btn").hide();
+    $(".attacker").hide();
+    $(".defender").hide();
+    $(".battle-text").text("");
+    game = new Game();
+    game.start();
+}
 
 var game;
 $(document).ready(function () {
