@@ -223,7 +223,53 @@ var screenHandler = {
         });
     },
     removeCharacter: function (index) {
-  
+        // Remove defeated character by character id
+        $(`div[data-char='${index}']`).remove();
+    },
+    disableAttack: function () {
+        var attackBtn = $("#attack-btn");
+        attackBtn.attr("disabled", "disabled");
+        attackBtn.off("click");
+
+    },
+    showResetButton: function () {
+        var resetBtn = $("#reset-btn")
+        resetBtn.show();
+        resetBtn.on("click", function () {
+            reset();
+        });
+    },
+    showAttackDefend: function () {
+        $(".attacker").show();
+        $(".defender").show();
+    },
+    flashInstructionsOn() {
+        $(".instructions").addClass("flash infinite");
+    },
+    flashInstructionsOff() {
+        $(".instructions").removeClass("flash infinite");
+    },
+    displayWin: function () {
+        var instructions = $(".instructions");
+        instructions.text("You Win!!!");
+        // green    
+        instructions.css("color", "#1ba71b");
+        $(".attacker img").css("border-color","#1ba71b");
+    },
+    displayLoss: function () {
+        var instructions = $(".instructions");
+        instructions.text("You Lose!!!");
+        // red   
+        instructions.css("color", "#cf1711");
+        $(".attacker img").css("border-color","#cf1711");
+        
+    },
+    displayBattleText: function (message) {
+        $(".battle-text").text(message);
+    }
+};
+
+function reset() {
 
 
 var game;
