@@ -27,5 +27,3 @@ CSS & Class changes
 Element attributes
 
 CSS Grid & Animations
-
-Play Now
